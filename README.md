@@ -56,4 +56,9 @@
 ## Определить что это такое
 
 1. new Random().Next(min,max) - метод, возвращающий случайное число из диапазона [min,max)
+
 2. ToLower - строчный шрифт
+
+3. Console.Clear()
+
+4. Console.SetCursorPosition(10,4);

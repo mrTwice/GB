@@ -3,3 +3,20 @@
 # Решить задачу используя цикл while
 # Input: 5
 # Output: 120
+
+number = int(input('Введите число: '))
+
+# m = 1
+# for i in range(1,number+1):
+#     m = m * i 
+# print(m)
+
+m = 1
+i = 1
+while i < number + 1:
+    m = m * i
+    i +=1
+print(m)
+
+
+

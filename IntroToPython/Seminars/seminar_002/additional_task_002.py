@@ -6,3 +6,20 @@
 # Первая строка входного файла INPUT.TXT содержит целое число N (3 ≤ N ≤ 1000) – количество кустов черники. 
 # Вторая строка содержит N целых положительных чисел a1, a2, ..., aN – число ягод черники, растущее на соответствующем кусте. Все ai не превосходят 1000.
 
+numbers = [1, 17, 6, 4, 5, 8, 42, 67]
+print(numbers)
+
+i = 0
+max = 0
+while i < len(numbers):
+    if i <= len(numbers) -3:
+        sum = numbers[i] + numbers[i + 1] + numbers[i + 2]
+        if sum > max: max = sum
+    if i == len(numbers) -2:
+        sum = numbers[len(numbers)-2] + numbers[len(numbers)-1] + numbers[0]
+        if sum > max: max = sum
+    if i == len(numbers) -1:
+        sum = numbers[len(numbers)-1] + numbers[0] + numbers[1]
+        if sum > max: max = sum
+    i += 1
+print(max)

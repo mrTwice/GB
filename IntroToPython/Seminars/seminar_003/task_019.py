@@ -1,3 +1,6 @@
-# Задача No19. Решение в группах
-# Дана последовательность из N целых чисел и число K. Необходимо сдвинуть всю последовательность (сдвиг - циклический) на K элементов вправо, K – положительное число.
-# Input: [1, 2, 3, 4, 5] k = 3 Output: [4, 5, 1, 2, 3]
+list_of_numbers = [1, 2, 3, 4, 5]
+print(list_of_numbers)
+k = 3
+for i in range(0, k):
+    list_of_numbers.insert(0, list_of_numbers.pop())
+print(list_of_numbers) 
